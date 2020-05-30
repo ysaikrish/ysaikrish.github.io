@@ -30,7 +30,7 @@ function onDocumentMouseMove( event ) {
 
 }
 
-var geometry = new THREE.SphereGeometry(0.01, 20, 20);
+var geometry = new THREE.SphereGeometry(0.02, 20, 20);
 var material = new THREE.MeshLambertMaterial({color: 0xc7d2d4});
 var mesh = new THREE.Mesh(geometry, material);
 var x = 0;
@@ -38,7 +38,7 @@ var reverse = false;
 
 mesh.position.set(1, 1, 1)
 
-for(var i = 0; i < 2500; i++)
+for(var i = 0; i < 2000; i++)
 {
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.x = (Math.random() - 0.6) * 20;
