@@ -30,7 +30,7 @@ function onDocumentMouseMove( event ) {
 
 }
 
-var geometry = new THREE.SphereGeometry(0.02, 20, 20);
+var geometry = new THREE.SphereGeometry(0.016, 20, 20);
 var material = new THREE.MeshLambertMaterial({color: 0xc7d2d4});
 var mesh = new THREE.Mesh(geometry, material);
 var x = 0;
