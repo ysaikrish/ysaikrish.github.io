@@ -19,15 +19,11 @@
 
               figure {
                 position: absolute;
-                top: 15%;
-                left: 3.5%;
                 border: thin #c0c0c0 solid;
                 display: flex;
                 flex-flow: column;
                 padding: 5px;
                 width: 15%;
-                
-                
               }
               
               img {
@@ -55,7 +51,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>                    
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav><!-- #multi-level-nav .multi-level-nav -->
@@ -63,33 +59,45 @@
 
     </header><!-- .masthead -->
 
+    <div style="position:absolute">
+        <h2>
+            Some of the ways you can contact me:
+        </h2>
+        
+    </div>
 
+    <figure class="photoContainer" style="left: 50%">
+        <a href="https://github.com/ysaikrish" target="_blank">
+            <img id="github" class="contact" src="icons/github.png">
+            <span style="text-decoration: none;">github</span>
+        </a>
+    </figure>
 
-      <figure class="photoContainer" id="profile">
-        <img id="firstPosition" class="photo" src="profile.jpg">
-      </figure>
+    <figure class="photoContainer" style="left: 20%">
+        <a href="https://github.com/ysaikrish" target="_blank">
+            <img id="github" class="contact" src="icons/instagram.png">
+            <span style="text-decoration: none;">github</span>
+        </a>
+    </figure>
 
-      <button style="justify-content: space-around; text-decoration: none; position:absolute; 
-              top:60%; left:12%; background-color:rgb(88, 49, 180)"   
-      onclick="window.open('ResumeWeb.pdf')" type="submit" target="_blank">
-                        <span style="padding-left: 5px;">Resume </span></button>
+    <figure class="photoContainer">
+        <a href="https://github.com/ysaikrish" target="_blank">
+            <img id="github" class="contact" src="icons/github.png">
+            <span style="text-decoration: none;">github</span>
+        </a>
+    </figure>
 
-      <div class="vl"></div>
-
-      <div class="text" style="position:absolute; left:50%; top:20%;background:white; opacity:0.3">
-        <p style="color:black">
-          
-        </p>
-      </div>
-
-
-      
-    
+    <figure class="photoContainer">
+        <a href="https://github.com/ysaikrish" target="_blank">
+            <img id="github" class="contact" src="icons/github.png">
+            <span style="text-decoration: none;">github</span>
+        </a>
+    </figure>
 
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"> </script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
  
 
     <script src= "script.js"> </script>
-
 </body>
+</html>

@@ -38,12 +38,12 @@ var reverse = false;
 
 mesh.position.set(1, 1, 1)
 
-for(var i = 0; i < 2000; i++)
+for(var i = 0; i < 1500; i++)
 {
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.x = (Math.random() - 0.6) * 20;
     mesh.position.y = (Math.random() - 0.6) * 20;
-    mesh.position.z = (Math.random() - 0.6) * 20;
+    mesh.position.z = (Math.random() - 0.6) * 15;
     scene.add(mesh);
 }
 scene.add(mesh);
@@ -58,7 +58,7 @@ var render = function(){
 
     camera.position.x += ( mouseX - camera.position.x ) * .05;
     camera.position.y += ( - mouseY - camera.position.y ) * .05;
-     camera.position.z += (mouseX - camera.position.x) * 0.05; //considered for change.
+    camera.position.z += (mouseX - camera.position.x) * 0.02; //considered for change.
 	camera.lookAt( scene.position );
    var cubes = scene.children;
     for(var i = 0; i < cubes.length; i++)
@@ -75,9 +75,10 @@ var render = function(){
 }
 render();
 
-this.tl = new TimelineMax().delay(.3);
-this.tl.to(this.mesh.scale, 1, {x: 2, ease: Expo.easeOut})
-this.tl.to(this.mesh.scale, .5, {x: .5, ease: Expo.easeOut})
+this.tl = new TimelineMax().duration(3);
+
+//this.tl.to(this.camera.position, 3, {x: camera.position.x -1, ease: Expo.easeOut})
+//this.tl.to(this.camera.position, 3, {x: camera.position.x, ease: Expo.easeOut})
 
 
 
