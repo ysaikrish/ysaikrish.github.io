@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+
+      .r2 {
+        background: hsl(0, 0%, 0%);
+        color: #FFFCED;
+        height: 10%;
+        top: 90%;
+        width: 100%;
+        position: absolute;
+        animation-duration: 2.5s;
+        animation-name: slideout;      
+      }
+    
+      .masthead{
+        background: hsl(0, 0%, 0%);
+        color: #FFFCED;
+        height: 10%;
+        width: 100%;
+        position: absolute;
+        animation-duration: 2.5s;
+        animation-name: slidein;
+    
+      }
+      
+      @keyframes slideout {
+        from{
+          top: 100%;
+        }
+        to {
+
+          top: 90%;
+        }
+      }
+      
+      @keyframes slidein {
+        from{
+          height: 0%; 
+        }
+        to {
+          height: 10%;
+        }
+      }
+
+      body{
+        overflow: hidden;
+      }
+
+
+      
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An empty page</title>
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/header.css">
+
+</head>
+
+<body>
+
+    <div class="ratio" id="r1"></div>
+    <header class="masthead clear"> 
+        <div class="site-header centered">
+           
+            <!-- <div id="nav" class="menu multi-level-nav">
+                <ul>
+                    <li><a href="index.html">Home</a>  </li>                  
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+              </div> -->
+              <div id="nav" class="multi-level-nav" style="right:0;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+              </div><!-- #multi-level-nav .multi-level-nav -->
+
+
+        </div><!-- .centered -->
+
+    </header><!-- .masthead -->
+
+    <h1>Sai Krishna Yeshala</h1> 
+    <div class="r2"></div>   
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"> </script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script src="head.js"></script>
+    <script src= "script.js"> </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style>  
+          /*            
+              .footer {
+                padding: 3em 3em 0;
+                background: hsl(0, 0%, 10%);
+                color: #FFFCED;
+              }
+              body{
+                background: url(pics/b1.jpg);
+              }
+              */
+              
+
+              @media screen and (max-width: 700px){
+                
+                .vl {
+                  border-top: 6px solid rgb(88, 49, 180);
+                  width: 100%;
+                  position: absolute;
+                  top: 53%;
+                }
+
+
+                .photoContainer {
+                  position: absolute;
+                  top: 12.5%;
+                  left: 10%; 
+                  right: 50%;
+                  display: flex;
+                  flex-flow: column;
+                  width: 40%;
+                  height: auto;
+                  margin: 0 auto;
+
+                }
+
+                .navigators{
+                  position: absolute;
+                  left: 60%;
+                  width: 30%;               
+                  background-color: #6f4caf;
+                  border: none;
+                  color: white;
+                  padding: 10px 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: flex;
+                  font-size: 15px;
+                  margin: 4px 2px;
+                  cursor: pointer;
+                  border-radius: 4px;
+                  align-items: center;
+                }
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  max-width: 100%;
+  
+                }
+
+                .text{
+                  position:absolute; 
+                  left:10%;
+                  right: 10%;
+                  
+                  opacity:1
+  
+                }
+/*
+                .text{
+                  overflow-y: scroll;
+                  height: 70%;
+                  scrollbar-width: thin;
+
+                  
+                }
+                */
+              }
+
+              @media screen and (min-width: 700px){
+
+                #heading{
+                  display:none; 
+                }
+
+                /*
+
+                .r2 {
+                  background: hsl(0, 0%, 0%);
+                  color: #FFFCED;
+                  height: 10%;
+                  top: 90%;
+                  width: 100%;
+                  position: absolute;
+                  animation-duration: 3s;
+                  animation-name: slideout;      
+                }
+                */
+
+              
+                .masthead{
+                  /*background: url('pics/t2.jpg');*/
+                  background: rgb(5, 5, 36);
+                  color: #FFFCED;
+                  height: 10%;
+                  width: 100%;
+                  position: absolute;
+                  animation-duration: 3s;
+                  animation-name: slidein;
+              
+                }
+
+                .photoContainer {
+                  position: absolute;
+                  top: 12.5%;
+                  left: 15%; 
+                  right: 75%;
+                  display: flex;
+                  flex-flow: column;
+                  width: 15%;
+                  height: auto;
+                  margin: 0 auto;
+                }
+
+                .navigators{
+                  position: absolute;
+                  left: 60%;
+                  width: 17.5%;              
+                  /*background-color: #6f4caf;*/
+                  background: url("pics/t3.jpg");
+                  border: 5px;
+                  border-color: white;
+                  color: white;
+                  padding: 10px 100px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: flex;
+                  font-size: 15px;
+                  margin: 4px 2px;
+                  cursor: pointer;
+                  border-radius: 4px;
+                  align-items: center;
+                  vertical-align: center;
+                }
+
+                .text
+                {
+                  position: absolute;
+                  right: 15%;
+                  left: 15%;
+                  overflow-y: scroll;
+                  height: 80%;
+                }
+
+                .r2 {
+                  background: rgb(5, 5, 36);
+                  color: #FFFCED;
+                  height: 10%;
+                  top: 135%;
+                  width: 100%;
+                  position: absolute;
+                      
+                }
+
+
+
+              }
+              
+
+/*
+              .photoContainer {
+                position: absolute;
+                top: 12.5%;
+                left: 10%; 
+                right: 50%;
+                display: flex;
+                flex-flow: column;
+                width: 40%;
+                height: auto;
+                margin: 0 auto;
+
+              }
+              */
+
+              img {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+
+              }
+
+              .resume {
+                position: absolute;
+                left: 60%;
+                top: 37%;
+                background-color: #6f4caf;
+                border: none;
+                color: white;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 4px;
+              }
+
+              
+
+
+              
+              /*
+              body{
+                overflow: hidden; 
+              }
+              */
+              
+
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sai Krishna Yeshala</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+
+    
+    </head>
+
+<body>
+  <div class="ratio" id="r1"></div>
+    <header class="masthead clear">
+
+        <div class="site-header centered">
+          <div id= "heading" style="color: white; font-family: roboto; font-size: 25px; position: absolute; left: 10%; top: 1%">Sai Krishna Yeshala</div>
+            <div id="nav" class="multi-level-nav" style="right:0;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+              </div><!-- #multi-level-nav .multi-level-nav -->
+        </div><!-- .centered -->
+
+    </header><!-- .masthead -->
+
+
+    
+     <figure class="photoContainer" id="profile"> 
+        <img id="firstPosition" src="pics/profile.jpg">
+     </figure>
+
+      <!-- <button value = "0" onclick="window.open('ResumeWeb.pdf')" target="_blank">
+                        <span style="padding-left: 5px;">Resume </span></button> -->
+      
+                        <button value = "0" class = "navigators" onclick="location.href= '#general'" target="_blank">
+                          General</button>
+
+                          <button value = "1" class = "navigators" onclick="location.href= '#interests'" target="_blank">
+                            <span style="padding-left: 5px;"> Interests </span></button>
+
+                            <button value = "2" class = "navigators" onclick="location.href= '#hobbies'" target="_blank">
+                              <span style="padding-left: 5px;"> Hobbies   </span></button>
+
+                              <button value = "3" class = "navigators" onclick="window.open('ResumeWeb.pdf')" target="_blank">
+                                <span style="padding-left: 5px;"> Contact </span></button>              
+      
+
+
+      <!-- <div class="vl"></div> -->
+
+      <div class="text" id = "para">
+        <p id = "general" style="color: white">
+          
+          The contents of this page contain a very elaborate answer to the question “Can you tell me about yourself?”. 
+
+          I was born in the city of Hyderabad located in the southern part of India. I have pursued my education until high school in Hyderabad. I moved to Blacksburg, Virginia in 2018 to pursue a Bachelor’s of Science Degree from the college of Engineering at Virginia Tech. I chose Computer Science as my field of study considering my future goal of developing unique software solutions for the problems people face in this world.
+
+
+        </p>
+
+
+        <h2 id="interests" style="color:white"> Interests: </h2>
+
+          <h3 style="color:white">Virtual Reality:</h3> 
+
+        <img style="width: 20%; height: 30%" src="pics/vr1.jpg">
+
+        
+
+        <p style="color: white;">
+          
+          VR has piqued my interest quite recently. I first experienced VR when I used one of my friends headsets. 
+          I was instantly surprised by the level of immersion, and the possibilities of implementing some great ideas that employ this technology. I ordered a headset for myself the next day. I have made a simple VR version of the Puzzle Towers of Hanoi using Unity. I am currently working on other ideas with VR right now.
+
+        </p>
+        <br>
+
+        <h3 style="color:white">Machine Learning:</h3> 
+
+        <img style="width: 15%; height: 20%" src="pics/ml1.jpg">
+
+
+        
+        <p style="color: white;">
+          Artificial Intelligence is a great interest of mine. The world is heading towards making this technology more accessible and improving it convivence for people to improve their lives. 
+          One of the subsets of AI that is already playing a major role in peoples lives is Machine Learning. Several ML algorithms are embedded in the applications we use on a daily basis. I like to read about the new advancements in this field and try to learn the various applications of ML algorithms. Being a part of the AI/ML club at VT has also given me great insights on ML and I look forward to involving in this field more in the coming future.
+        </p>
+
+        <br>
+
+        <h3 style="color:white">Combat Sports:</h3> 
+
+        <img style="width: 20%; height: 25%" src="pics/cs1.jpg">
+
+        <p style="color: white;">
+          I am a huge fan of Combat sports and I like to follow boxing and UFC. I had my own adventures in the world of Martial Arts until my high school ended. I am a Dan1 Black Belt holder in Shotokan Karate. I began practicing martial arts since I was 9, and worked my way up to achieve a black belt at the age of 17. Martial arts is a sport that teaches you a lot of things, mainly discipline and respect. The qualities learnt from this art form help you in various areas of your life. 
+          
+Since my days of taking part in tournaments, I’ve been watching MMA and Boxing and try to get inspiration from the fighters. I enjoy following the buildups to fights, making predictions and ultimately watching them. I garner a great deal of inspiration from the fighters after their fight, for all the work they have put in, leading into a fight.
+
+        </p>
+
+        <br>
+
+        <h2 id="hobbies" style="color:white"> Hobbies: </h2>
+
+        <h3 style="color:white">Piano:</h3>
+        <img style="width: 20%; height: 25%" src="pics/piano.jpg">
+        <p style="color: white;">
+          I have been playing this instrument for over 10 years now. Western classical music is one of my favorite Genres of music. Chopin, Beethoven, and Bach take me back in time when I listen to them. 
+          I like to practice various classical pieces on my digital piano. I am a huge fan of Chopin’s music and one of my goals is to become a very proficient player of Chopin’s pieces. I am currently working on “Nocturne in C Sharp Minor (No. 20)” by Chopin. My other favorite pieces that I like to play are Beethoven’s Moonlight Sonata 1st Movement, Solfeggietto by CPE Bach, Turkish March by Mozart and other pieces by JS Bach, Tchaikovsky. Scott Joplin’s music is also a great interest of mine. 
+
+        </p>
+        <br>
+
+        <h3 style="color:white">VR development:</h3>
+        <img style="width: 20%; height: 25%" src="pics/dev1.png">
+        <p style="color: white;">
+          Since I got my VR headset, exploring various forms of content in VR has become a hobby of mine. I believe VR is going to change the way of doing a lot of things in the future. I like to watch movies, videos, and immersive stories in my own virtual world. In fact, I work in my own virtual space by connecting my laptop to the headset.
+
+
+There are some great VR games out there and they offer a great immersive experience. I like to play games like SuperHot, and VRchat. I have began involving myself with development of apps and games for Virtual Reality. I look forward to developing great content for VR soon.
+
+        </p>
+
+
+
+
+
+      </div>
+      <div class="r2"></div> 
+    
+
+
+      <footer style="background: white; bottom: 0%; top: 90%">
+        
+      </footer>
+
+
+  
+    
+    <div class="r2"></div>   
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"> </script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src= "head.js"></script>
+    <script>
+      //$(':root').css("--containerHeight", $(figure).height());
+      var fig = document.getElementById("profile")   
+      var width = $(document).width();
+      
+      if(width > 700)
+      {
+        $(document).ready(function(){
+          $('#para').css({
+            'top' : 30 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+            //'border' : '1px solid red', 
+          }); 
+        });
+       
+        $( window ).resize(function() {
+          $('#para').css({
+            'top' : 30 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+            //'border' : '1px solid red',
+          })
+      });
+
+      }
+      
+
+    else if(width <= 700)
+    {
+      $(document).ready(function(){
+        $('#para').css({
+          'top' : 50 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+          //'border' : '1px solid red', 
+        }); 
+      });
+     
+      $( window ).resize(function() {obie
+        $('#para').css({
+          'top' : 50 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+          //'border' : '1px solid red',
+        })
+    });
+
+    }
+
+
+
+
+  
+    
+
+    function navAlign(){
+      var x = parseInt(this.value);
+      var height = ($('.photoContainer').height() - 10) / 4
+      
+
+        $(this).css({
+          'height' : height,
+          'top' : 12.5 + x * (height + 20) * 100/ $(document).height() + '%',
+          'align-items' : 'center'
+        })
+      }
+
+    function navAlign2()
+    {
+      var x = parseInt(this.value);
+      var height = ($('.photoContainer').height() - 10) / 4
+      
+
+        $(this).css({
+          'height' : height,
+          'top' : 12.5 + x * (height + 170) * 100/ $(document).height() + '%',
+          'align-items' : 'center'
+        })
+
+    }
+
+    
+    function bigAlign()
+    {
+      var x = parseInt(this.value);
+      y = x % 2
+      var height = ($('.photoContainer').height() - 10) / 4
+      console.log(x)
+
+      $(this).css({
+        'height' : height,
+        'align-items' : 'center'
+      })
+
+      if(x === 0){
+        $(this).css({
+          
+          'top' : 12.5 + 1 * (height + 10) * 100/ $(document).height() + '%',
+          'left': 40 + '%',
+          'right': 40 + '%'
+        })
+      }
+
+      else if(x === 1){
+        $(this).css({
+          
+          'left' : 60 + '%',
+          'right': 10 + '%',
+          'top' : 12.5 + 1 * (height + 10) * 100/ $(document).height() + '%',
+        })
+      }
+
+      else if(x === 2){
+        $(this).css({
+          
+          'left' : 40 + '%',
+          'top' : 12.5 + 2 * (height + 20) * 100/ $(document).height() + '%',
+        })
+      }
+
+      else if(x === 3){
+        $(this).css({
+          
+          'left' : 60 + '%',
+          'top' : 12.5 +  2* (height + 20) * 100/ $(document).height() + '%',
+          
+        })
+      }
+
+
+    }
+    
+  
+
+    
+    
+    if(width <= 700)
+    {
+      console.log("yes")
+
+      function re()
+      {
+        $('.navigators').each(navAlign2)
+      }
+
+      $(document).ready(function(){
+        $('.navigators').each(navAlign2);
+      });
+
+      $(window).resize(re);    
+    }
+    else{
+
+      $(document).ready(function(){
+        $('.navigators').each(bigAlign);
+      });
+    }
+      
+    
+        //$('.text').each(function(){ //loop through each element with the .dynamic-height class
+           // $(this).css({
+             //   'top' : $(.photoContainer).height() //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
+            //});
+        //});
+    //
+    </script>
+ 
+
+    <!-- <script src= "script.js"> </script> -->
+
+</body>
