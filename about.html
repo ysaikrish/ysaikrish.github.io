@@ -58,7 +58,7 @@
                   align-items: center;
                 }
 
-                img {
+                #firstPosition {
                   width: 100%;
                   height: 100%;
                   max-width: 100%;
@@ -72,6 +72,10 @@
                   
                   opacity:1
   
+                }
+
+                .contentPics{
+                  width: 35%;
                 }
 /*
                 .text{
@@ -172,24 +176,8 @@
 
 
               }
-              
 
-/*
-              .photoContainer {
-                position: absolute;
-                top: 12.5%;
-                left: 10%; 
-                right: 50%;
-                display: flex;
-                flex-flow: column;
-                width: 40%;
-                height: auto;
-                margin: 0 auto;
-
-              }
-              */
-
-              img {
+              #firstPosition {
                 width: 100%;
                 height: 100%;
                 max-width: 100%;
@@ -213,15 +201,6 @@
                 border-radius: 4px;
               }
 
-              
-
-
-              
-              /*
-              body{
-                overflow: hidden; 
-              }
-              */
               
 
         </style>
@@ -292,7 +271,7 @@
 
           <h3 style="color:white">Virtual Reality:</h3> 
 
-        <img style="width: 20%; height: 30%" src="pics/vr1.jpg">
+        <img class="contentPics" src="pics/vr1.jpg">
 
         
 
@@ -306,7 +285,7 @@
 
         <h3 style="color:white">Machine Learning:</h3> 
 
-        <img style="width: 15%; height: 20%" src="pics/ml1.jpg">
+        <img class="contentPics" src="pics/ml1.jpg">
 
 
         
@@ -319,12 +298,12 @@
 
         <h3 style="color:white">Combat Sports:</h3> 
 
-        <img style="width: 20%; height: 25%" src="pics/cs1.jpg">
+        <img class="contentPics" src="pics/cs1.jpg">
 
         <p style="color: white;">
           I am a huge fan of Combat sports and I like to follow boxing and UFC. I had my own adventures in the world of Martial Arts until my high school ended. I am a Dan1 Black Belt holder in Shotokan Karate. I began practicing martial arts since I was 9, and worked my way up to achieve a black belt at the age of 17. Martial arts is a sport that teaches you a lot of things, mainly discipline and respect. The qualities learnt from this art form help you in various areas of your life. 
           
-Since my days of taking part in tournaments, I’ve been watching MMA and Boxing and try to get inspiration from the fighters. I enjoy following the buildups to fights, making predictions and ultimately watching them. I garner a great deal of inspiration from the fighters after their fight, for all the work they have put in, leading into a fight.
+          Since my days of taking part in tournaments, I’ve been watching MMA and Boxing and try to get inspiration from the fighters. I enjoy following the buildups to fights, making predictions and ultimately watching them. I garner a great deal of inspiration from the fighters after their fight, for all the work they have put in, leading into a fight.
 
         </p>
 
@@ -333,7 +312,7 @@ Since my days of taking part in tournaments, I’ve been watching MMA and Boxing
         <h2 id="hobbies" style="color:white"> Hobbies: </h2>
 
         <h3 style="color:white">Piano:</h3>
-        <img style="width: 20%; height: 25%" src="pics/piano.jpg">
+        <img class = "contentPics" src="pics/piano.jpg">
         <p style="color: white;">
           I have been playing this instrument for over 10 years now. Western classical music is one of my favorite Genres of music. Chopin, Beethoven, and Bach take me back in time when I listen to them. 
           I like to practice various classical pieces on my digital piano. I am a huge fan of Chopin’s music and one of my goals is to become a very proficient player of Chopin’s pieces. I am currently working on “Nocturne in C Sharp Minor (No. 20)” by Chopin. My other favorite pieces that I like to play are Beethoven’s Moonlight Sonata 1st Movement, Solfeggietto by CPE Bach, Turkish March by Mozart and other pieces by JS Bach, Tchaikovsky. Scott Joplin’s music is also a great interest of mine. 
@@ -342,7 +321,7 @@ Since my days of taking part in tournaments, I’ve been watching MMA and Boxing
         <br>
 
         <h3 style="color:white">VR development:</h3>
-        <img style="width: 20%; height: 25%" src="pics/dev1.png">
+        <img class = "contentPics" src="pics/dev1.png">
         <p style="color: white;">
           Since I got my VR headset, exploring various forms of content in VR has become a hobby of mine. I believe VR is going to change the way of doing a lot of things in the future. I like to watch movies, videos, and immersive stories in my own virtual world. In fact, I work in my own virtual space by connecting my laptop to the headset.
 
@@ -380,14 +359,14 @@ There are some great VR games out there and they offer a great immersive experie
       {
         $(document).ready(function(){
           $('#para').css({
-            'top' : 30 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+            'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
             //'border' : '1px solid red', 
           }); 
         });
        
         $( window ).resize(function() {
           $('#para').css({
-            'top' : 30 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+            'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
             //'border' : '1px solid red',
           })
       });
@@ -399,12 +378,12 @@ There are some great VR games out there and they offer a great immersive experie
     {
       $(document).ready(function(){
         $('#para').css({
-          'top' : 50 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+          'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
           //'border' : '1px solid red', 
         }); 
       });
      
-      $( window ).resize(function() {obie
+      $( window ).resize(function() {
         $('#para').css({
           'top' : 50 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
           //'border' : '1px solid red',
@@ -434,12 +413,13 @@ There are some great VR games out there and they offer a great immersive experie
     function navAlign2()
     {
       var x = parseInt(this.value);
-      var height = ($('.photoContainer').height() - 10) / 4
+      var height = ($('.photoContainer').height() - 21) / 4
+      console.log(height);
       
 
         $(this).css({
           'height' : height,
-          'top' : 12.5 + x * (height + 170) * 100/ $(document).height() + '%',
+          'top' : 12.5 + x * (height + 7) * 100/ window.innerHeight + '%',
           'align-items' : 'center'
         })
 
