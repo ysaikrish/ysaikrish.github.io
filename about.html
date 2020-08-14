@@ -2,7 +2,7 @@
 <html lang="en-US">
 
     <head>
-      <script data-ajax= 'false' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -386,18 +386,24 @@
     <script src= "head.js"></script>
     <script>
       //$(':root').css("--containerHeight", $(figure).height());
+      window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
       var fig = document.getElementById("profile")   
       var width = window.innerWidth;
       var winHeight = window.innerHeight;
       
       if(width > 700)
       {
-        //$(document).ready(function(){
+        $(document).read(function(){
           $('#para').css({
             'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
             //'border' : '1px solid red', 
           }); 
-        //});
+        });
        
         $( window ).resize(function() {
           $('#para').css({
@@ -418,7 +424,7 @@
         }); 
       });
      
-      $( window ).resize(function() {
+      $( window).resize(function() {
         $('#para').css({
           'top' : 20 + $('#profile').outerHeight(true) * 100  / winHeight+ '%'
           //'border' : '1px solid red',
