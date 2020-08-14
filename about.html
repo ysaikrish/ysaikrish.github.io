@@ -3,7 +3,7 @@
 
     <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link data-ajax= "false" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
         <style>  
@@ -71,7 +71,6 @@
                   position:absolute; 
                   left:10%;
                   right: 10%;
-                  
                   opacity:1
   
                 }
@@ -161,7 +160,7 @@
                 .navigators{
                   position: absolute;
                   left: 60%;
-                  width: 17.5%;              
+                  width: 17.5% !important;
                   /*background-color: #6f4caf;*/
                   background: url("pics/t3.jpg");
                   border: 0.05px solid;
@@ -228,16 +227,6 @@
                 max-width: 100%;
 
               }
-
-              
-
-              
-              
-
-
-
-
-              
 
         </style>
         <meta charset="UTF-8">
@@ -398,17 +387,17 @@
     <script>
       //$(':root').css("--containerHeight", $(figure).height());
       var fig = document.getElementById("profile")   
-      var width = $(document).width();
+      var width = window.innerWidth;
       var winHeight = window.innerHeight;
       
       if(width > 700)
       {
-        $(document).ready(function(){
+        //$(document).ready(function(){
           $('#para').css({
             'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
             //'border' : '1px solid red', 
           }); 
-        });
+        //});
        
         $( window ).resize(function() {
           $('#para').css({
@@ -454,7 +443,6 @@
     {
       var x = parseInt(this.value);
       var height = ($('.photoContainer').height() - 21) / 4
-      console.log(height);
       
 
         $(this).css({
@@ -471,7 +459,6 @@
       var x = parseInt(this.value);
       y = x % 2
       var height = ($('.photoContainer').height() - 10) / 4
-      console.log(x)
 
       $(this).css({
         'height' : height,
@@ -483,7 +470,7 @@
           
           'top' : 12.5 + 1 * (height + 10) * 100/ $(document).height() + '%',
           'left': 40 + '%',
-          'right': 40 + '%'
+          //'right': 40 + '%'
         })
       }
 
@@ -491,7 +478,7 @@
         $(this).css({
           
           'left' : 60 + '%',
-          'right': 10 + '%',
+          //'right': 10 + '%',
           'top' : 12.5 + 1 * (height + 10) * 100/ $(document).height() + '%',
         })
       }
@@ -522,7 +509,6 @@
     
     if(width <= 700)
     {
-      console.log("yes")
 
       function re()
       {
