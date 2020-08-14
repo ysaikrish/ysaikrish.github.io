@@ -3,6 +3,8 @@
 
     <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
         <style>  
           /*            
@@ -77,6 +79,13 @@
                 .contentPics{
                   width: 35%;
                 }
+
+                .logos{
+
+                  width: 10%;
+                  height: 15%;
+                  
+                }
 /*
                 .text{
                   overflow-y: scroll;
@@ -86,12 +95,28 @@
                   
                 }
                 */
+                #resume{
+                  width: 40%;
+                  height: 25%;
+                  background:rgb(88, 49, 180);
+                  border: none;
+                  border-radius: 5px;
+                  color: white;
+                  cursor: pointer;
+                  font-size: 15px;
+                
+  
+                }
               }
 
               @media screen and (min-width: 700px){
 
                 #heading{
                   display:none; 
+                }
+
+                .contentPics{
+                  width: 17.5%;
                 }
 
                 /*
@@ -139,19 +164,25 @@
                   width: 17.5%;              
                   /*background-color: #6f4caf;*/
                   background: url("pics/t3.jpg");
-                  border: 5px;
-                  border-color: white;
+                  border: 0.05px solid;
+                  border-color: rgb(88, 49, 180);
                   color: white;
                   padding: 10px 100px;
                   text-align: center;
                   text-decoration: none;
-                  display: flex;
+                  
                   font-size: 15px;
-                  margin: 4px 2px;
+                  
                   cursor: pointer;
                   border-radius: 4px;
-                  align-items: center;
-                  vertical-align: center;
+                  
+                }
+
+                .logos{
+
+                  width: 5%;
+                  height: 8%;
+                  
                 }
 
                 .text
@@ -173,6 +204,20 @@
                       
                 }
 
+                #resume{
+                  width: 15%;
+                  height: 7.5%;
+                  left: 0.5%;
+                  position: relative;
+                  background:rgb(88, 49, 180);
+                  border: none;
+                  border-radius: 5px;
+                  color: white;
+                  cursor: pointer;
+                  font-size: 15px;
+                
+  
+                }
 
 
               }
@@ -184,22 +229,13 @@
 
               }
 
-              .resume {
-                position: absolute;
-                left: 60%;
-                top: 37%;
-                background-color: #6f4caf;
-                border: none;
-                color: white;
-                padding: 10px 25px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 15px;
-                margin: 4px 2px;
-                cursor: pointer;
-                border-radius: 4px;
-              }
+              
+
+              
+              
+
+
+
 
               
 
@@ -209,7 +245,7 @@
         <title>Sai Krishna Yeshala</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/header.css">
-
+ 
     
     </head>
 
@@ -244,13 +280,13 @@
                           General</button>
 
                           <button value = "1" class = "navigators" onclick="location.href= '#interests'" target="_blank">
-                            <span style="padding-left: 5px;"> Interests </span></button>
+                            Interests </button>
 
                             <button value = "2" class = "navigators" onclick="location.href= '#hobbies'" target="_blank">
-                              <span style="padding-left: 5px;"> Hobbies   </span></button>
+                               Hobbies</button>
 
-                              <button value = "3" class = "navigators" onclick="window.open('ResumeWeb.pdf')" target="_blank">
-                                <span style="padding-left: 5px;"> Contact </span></button>              
+                              <button value = "3" class = "navigators" onclick="location.href= '#contact'" target="_blank">
+                                Contact </button>              
       
 
 
@@ -259,7 +295,7 @@
       <div class="text" id = "para">
         <p id = "general" style="color: white">
           
-          The contents of this page contain a very elaborate answer to the question “Can you tell me about yourself?”. 
+          The contents of this page contain a very elaborate answer to the question “Can you tell me about yourself?”.<br><br>
 
           I was born in the city of Hyderabad located in the southern part of India. I have pursued my education until high school in Hyderabad. I moved to Blacksburg, Virginia in 2018 to pursue a Bachelor’s of Science Degree from the college of Engineering at Virginia Tech. I chose Computer Science as my field of study considering my future goal of developing unique software solutions for the problems people face in this world.
 
@@ -326,16 +362,25 @@
           Since I got my VR headset, exploring various forms of content in VR has become a hobby of mine. I believe VR is going to change the way of doing a lot of things in the future. I like to watch movies, videos, and immersive stories in my own virtual world. In fact, I work in my own virtual space by connecting my laptop to the headset.
 
 
-There are some great VR games out there and they offer a great immersive experience. I like to play games like SuperHot, and VRchat. I have began involving myself with development of apps and games for Virtual Reality. I look forward to developing great content for VR soon.
+        There are some great VR games out there and they offer a great immersive experience. I like to play games like SuperHot, and VRchat. I have began involving myself with development of apps and games for Virtual Reality. I look forward to developing great content for VR soon.
 
         </p>
+        <br><br>
 
+        <h2 id="contact" style="color:white"> Contact: </h2> 
 
+        <h4 style="color:white"> Some of the ways you can contact me: </h4>
+        <a href="https://github.com/ysaikrish" > <img class="logos" src="icons/github.png"> </a> &emsp;
+        <a href="mailto:saikrishna@vt.edu" > <img class="logos" src="icons/gmail.jpg"></a> &emsp;
+        <a href="https://www.linkedin.com/in/sai-krishna-yeshala-3a0694191" > <img class="logos" src="icons/linkedin.jpg"></a> <br><br>
+        <button id="resume" onclick= "window.open('ResumeWeb.pdf')"> Resume </button>
+        <br><br>
 
+      </div> 
+      <div class="r2">
+        
+      </div> 
 
-
-      </div>
-      <div class="r2"></div> 
     
 
 
@@ -385,25 +430,19 @@ There are some great VR games out there and they offer a great immersive experie
      
       $( window ).resize(function() {
         $('#para').css({
-          'top' : 50 + $('#profile').outerHeight(true) * 100  / $(document).height() + '%'
+          'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
           //'border' : '1px solid red',
         })
     });
 
     }
 
-
-
-
-  
-    
-
     function navAlign(){
       var x = parseInt(this.value);
       var height = ($('.photoContainer').height() - 10) / 4
       
 
-        $(this).css({
+        $(this).css({ 
           'height' : height,
           'top' : 12.5 + x * (height + 20) * 100/ $(document).height() + '%',
           'align-items' : 'center'
