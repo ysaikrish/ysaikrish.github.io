@@ -399,6 +399,7 @@
       //$(':root').css("--containerHeight", $(figure).height());
       var fig = document.getElementById("profile")   
       var width = $(document).width();
+      var winHeight = window.innerHeight;
       
       if(width > 700)
       {
@@ -423,14 +424,14 @@
     {
       $(document).ready(function(){
         $('#para').css({
-          'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
+          'top' : 20 + $('#profile').outerHeight(true) * 100  / winHeight+ '%'
           //'border' : '1px solid red', 
         }); 
       });
      
       $( window ).resize(function() {
         $('#para').css({
-          'top' : 20 + $('#profile').outerHeight(true) * 100  / window.innerHeight + '%'
+          'top' : 20 + $('#profile').outerHeight(true) * 100  / winHeight+ '%'
           //'border' : '1px solid red',
         })
     });
@@ -458,7 +459,7 @@
 
         $(this).css({
           'height' : height,
-          'top' : 12.5 + x * (height + 7) * 100/ window.innerHeight + '%',
+          'top' : 12.5 + x * (height + 7) * 100/ winHeight + '%',
           'align-items' : 'center'
         })
 
