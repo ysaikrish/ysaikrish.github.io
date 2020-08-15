@@ -60,101 +60,7 @@
     }
   }
   
-  
-    
- /*
-   @media screen and (min-width: 500px){
-      .multi-level-nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-      }
-      
-      .multi-level-nav li {
-            flex: 1 0 auto;
-        position: relative;
-      }
-      
-        .multi-level-nav a {
-            padding-right: 1.4em;
-            border-bottom: none;
-        }
-      
-        .multi-level-nav a:focus,
-        .multi-level-nav a:hover {
-            padding-left: 0;
-            background: inherit;
-            color: white;
-            text-decoration: underline;
-        }
-      
-      .multi-level-nav ul ul {
-        display: none;
-        position: absolute;
-        z-index:100;
-      }
-      
-      .multi-level-nav ul ul li {
-            flex: 1 1 auto;
-      }
-      
-      .multi-level-nav ul .toggled-on {
-        display: flex;
-      }
-      
-      .dropdown-toggle {
-        margin: 0 -.25em 0 .25em;
-        padding: 0 .25em;
-        border: 0;
-        content: "";
-        text-transform: lowercase; /* Stop screen readers to read the text as capital letters
-        background-color: transparent;
-      }
-      
-      .dropdown-toggle:after {
-        position: relative;
-        top: 0;
-        left: 0;
-            width: 1em;
-        color: white;
-        content: "+";
-        line-height: 1em;
-      }
-      
-      .dropdown-toggle:hover,
-      .dropdown-toggle:focus {
-        outline: solid white 1px;
-      }
-      
-      .dropdown-toggle.toggle-on:after {
-        content: "–";
-      }
-      
-        .toggled-on {
-            border: 1px solid white;
-            border-top: none;
-        }
-      
-        .toggled-on a {
-            padding-left: .8em;
-            background-color: #002254;
-        }
-      
-        a.reserve {
-            margin-top: .4em;
-            padding: .2em .5em;
-            border: 1px solid white;
-            transition: none;
-        }
-      
-        a.reserve:focus,
-        a.reserve:hover {
-            padding-left: .5em;
-            background: white;
-            color: #002254;
-            text-decoration: none;
-        }
-        */
+
 
 
         
@@ -200,8 +106,7 @@
             
           #nav.js {
             display: none;
-            
-            
+ 
           }
           ul {
             

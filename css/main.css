@@ -17,13 +17,14 @@
     background-image: -webkit-linear-gradient(left, violet, #070c50);
     
     /* Firefox 3.6 - 15 */
-    background-image: -moz-linear-gradient(left, rgb(14, 5, 54), #f06d06);
+    background-image: -moz-linear-gradient(right, rgb(10, 11, 12), #202558);
     
     /* Opera 11.1 - 12 */
-    background-image: -o-linear-gradient(left, rgb(24, 8, 68), #f06d06);
+    background-image: -o-linear-gradient(right,  rgb(10, 11, 12), #202558);
     
-    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-    background-image: linear-gradient(to right, rgb(21, 3, 54), #272b58);
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ 
+    background-image: linear-gradient(to right, rgb(21, 3, 54), #272b58);*/
+    background-image: linear-gradient(to right, rgb(10, 11, 12), #202558);
     margin: 0px;
     /* overflow: hidden; */
     overscroll-behavior-y: none;
